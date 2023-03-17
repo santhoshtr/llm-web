@@ -1,0 +1,3 @@
+bloom-560m:
+  model: models/bloom-560m
+  tokenizer: models/bloom-560m/tokenizer.json

@@ -1,0 +1,36 @@
+<html lang="en">
+
+    <head>
+        <title>BLOOM LLM Demo</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="theme-style" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <script src="{{ url_for('static', filename='main.js') }}"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1><span class="bloom">BLOOM</span> Large language model</h1>
+        </header>
+        <main>
+            <section class="container">
+                <textarea id="prompt">
+Jazz is a music genre that originated in
+               </textarea>
+            </section>
+            <section class="actions">
+                <button onclick="doGenerate()">Generate</button>
+                <progress id="progress"></progress>
+                <p id="status"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a demo of <a href="https://huggingface.co/bigscience/bloom">BLOOM</a> Large language model.</a> The models are optimized for performance using <a href="https://github.com/OpenNMT/CTranslate2">OpenNMT
+                    CTranslate2</a></p>
+
+        </footer>
+    </body>
+
+</html>
