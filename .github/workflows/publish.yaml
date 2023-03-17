@@ -11,7 +11,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build the tesseract-ocr-web Docker image
+      - name: Build the llm-web Docker image
         run: |
           docker build . --tag ghcr.io/santhoshtr/llm-web:latest
           docker push ghcr.io/santhoshtr/llm-web:latest
