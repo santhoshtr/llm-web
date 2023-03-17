@@ -23,6 +23,10 @@ class BaseGenerator:
     def getTokenizer(self):
         raise Exception("Not implemented")
 
+    def getTokenizer(self):
+        return transformers.AutoTokenizer.from_pretrained( self.config.get("tokenizer"))
+
+
     def init(self):
         self.generator = self.getGenerator()
         self.tokenizer = self.getTokenizer()

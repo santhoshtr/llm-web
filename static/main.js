@@ -2,7 +2,7 @@ function doGenerate() {
     document.getElementById('progress').style.display = "block";
     const prompt= document.getElementById('prompt').value;
     document.getElementById('status').innerText ='';
-    const model =  "bloom-560m"
+    const model = document.getElementById('model').value;
     fetch(`/api/generate/${model}`, {
         method: 'POST',
         headers: {

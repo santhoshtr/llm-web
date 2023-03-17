@@ -15,9 +15,11 @@
         </header>
         <main>
             <section class="container">
-                <textarea id="prompt">
-Jazz is a music genre that originated in
-               </textarea>
+                <select id="model">
+                    <option value="bloomz-1b7">bloomz-1b7</option>
+                    <option value="bloom-560m" selected>bloom-560m</option>
+                </select>
+                <textarea id="prompt">The sky is blue because </textarea>
             </section>
             <section class="actions">
                 <button onclick="doGenerate()">Generate</button>

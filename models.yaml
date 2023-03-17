@@ -1,3 +1,6 @@
 bloom-560m:
   model: models/bloom-560m
-  tokenizer: models/bloom-560m/tokenizer.json
+  tokenizer: bigscience/bloom-560m
+bloomz-1b7:
+  model: models/bloomz-1b7
+  tokenizer: bigscience/bloomz-1b7

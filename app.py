@@ -48,7 +48,7 @@ def generate_handler(model):
             413,
             description="Request too large to handle. Maximum 10000 characters are supported.",
         )
-    prompt = prompt.strip()
+
     start = time.time()
     generator = GeneratorFactory(config, model)
 
